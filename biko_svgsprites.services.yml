@@ -1,0 +1,5 @@
+services:
+  MyModule.customTwigExtension:
+    class: Drupal\biko_svgsprites\twigSvgSprites
+    tags:
+      - { name: twig.extension }

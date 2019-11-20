@@ -1,0 +1,5 @@
+name: BIKO SVG Sprites
+type: module
+description: Twig extension
+package: BIKO
+core: 8.x

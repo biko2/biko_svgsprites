@@ -1,0 +1,7 @@
+{
+    "name": "biko2/biko_svgsprites",
+    "description": "Twig function for svg sprites",
+    "require": {
+        "php": "^7.2"
+    }
+}
