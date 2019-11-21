@@ -3,5 +3,6 @@
     "description": "Twig function for svg sprites",
     "require": {
         "php": "^7.2"
-    }
+    },
+    "type": "drupal-module"
 }
