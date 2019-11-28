@@ -43,11 +43,14 @@ class twigSvgSprites extends \Twig_Extension {
    * @return string
    *   value of the query parameter name
    */
-  public static function svgSprite($name) {
+  public static function svgSprite($name,$iconClass = null) {
+
     $theme_handler = \Drupal::service('theme_handler');
     $default_theme = $theme_handler->getDefault();
     $theme_path = $theme_handler->getTheme($default_theme)->getPath();
-    return '<svg><use xlink:href="/' . $theme_path . '/assets/svg/sprite/sprite.svg#' . $name . '"></use></svg>';
+    $output = '<svg class="icon ' + $iconClass +' svg--'+$name+'-dims' + '">';
+    $output += '<use xlink:href="/' . $theme_path . '/assets/svg/sprite/sprite.svg#' . $name . '"></use></svg>';
+    return
   }
 
   /**
