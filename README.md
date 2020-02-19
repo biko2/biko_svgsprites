@@ -3,5 +3,5 @@
 
 ## Usage
 ```
-{{svgSprite(ID)}}
+{{svgSprite(ID,additionalClass)}}
 ```
