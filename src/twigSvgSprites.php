@@ -48,7 +48,7 @@ class twigSvgSprites extends \Twig_Extension {
     $theme_handler = \Drupal::service('theme_handler');
     $default_theme = $theme_handler->getDefault();
     $theme_path = $theme_handler->getTheme($default_theme)->getPath();
-    $output = '<svg class="icon ' + $iconClass +' svg--'+$name+'-dims' + '">';
+    $output = '<svg class="icon ' . $iconClass .' svg--' . $name . '-dims'  .  '">';
     $output += '<use xlink:href="/' . $theme_path . '/assets/svg/sprite/sprite.svg#' . $name . '"></use></svg>';
     return $output;
   }
