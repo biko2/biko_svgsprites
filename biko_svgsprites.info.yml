@@ -1,5 +1,5 @@
 name: BIKO SVG Sprites
 type: module
 description: Twig extension
+core_version_requirement: ^8 || ^9
 package: BIKO
-core: 8.x
